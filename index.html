@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html>
+<title>ndl.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs.css">
+<link rel="stylesheet" href="notre-dame-main-styling.css">
+<link rel="stylesheet" href="video.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+
+
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/ndlimages/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/ndlimages/parallax3.jpg");
+    min-height: 400px;
+}
+
+.ndl-wide {letter-spacing: 10px;}
+.ndl-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="ndl-top">
+  <div class="ndl-bar" id="myNavbar">
+    <a class="ndl-bar-item ndl-button ndl-hover-black ndl-hide-medium ndl-hide-large ndl-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="ndl-bar-item ndl-button">ALUMNI</a>
+    <a href="#about" class="ndl-bar-item ndl-button ndl-hide-small"><i class="fa fa-user"></i> À Propos</a>
+    <a href="#portfolio" class="ndl-bar-item ndl-button ndl-hide-small"><i class="fa fa-th"></i> Évenements</a>
+    <a href="#contact" class="ndl-bar-item ndl-button ndl-hide-small"><i class="fa fa-envelope"></i> Nous joindre</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="ndl-bar-block ndl-white ndl-hide ndl-hide-large ndl-hide-medium">
+    <a href="#about" class="ndl-bar-item ndl-button" onclick="toggleFunction()">À Propos</a>
+    <a href="#portfolio" class="ndl-bar-item ndl-button" onclick="toggleFunction()">Événements</a>
+    <a href="#contact" class="ndl-bar-item ndl-button" onclick="toggleFunction()">Nous joindre</a>
+  </div>
+</div>
+
+
+<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<div id="vidtop-content">
+<div class="vid-info">
+      <div class="ndl-display-middle" style="white-space:nowrap;">
+        <span id="header-message" class="ndl-center ndl-padding-large ndl-black ndl-xlarge ndl-wide ndl-animate-opacity">ALUMNI <span class="ndl-hide-small">Notre Dame</span> de Grace</span>
+      </div>
+</div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="ndl-content ndl-container ndl-padding-64" id="about">
+  <h3 class="ndl-center">Lorem Ipsum</h3>
+  <p class="ndl-center"><em>Lorem Ipsum</em></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum diam quis metus maximus, vitae mollis elit euismod. Integer eu quam convallis neque feugiat ornare quis eget urna. Curabitur egestas arcu sed laoreet molestie. Sed sapien mi, aliquet id erat ac, pellentesque sagittis leo. Pellentesque quam sapien, volutpat sed nibh nec, venenatis accumsan nibh. Phasellus vestibulum pretium convallis. Nam in ornare neque, eget posuere orci. Curabitur interdum nulla ut tortor tincidunt, vitae sagittis massa consectetur. In vel est sed massa euismod feugiat. Proin ac fermentum orci, ut auctor nisi.</p>
+  <div class="ndl-row">
+    <div class="ndl-col m6 ndl-center ndl-padding-large">
+      <p><b><i class="fa fa-user ndl-margin-right"></i>Lorem Ipsum</b></p><br>
+      <img src="/ndlimages/avatar_hat.jpg" class="ndl-round ndl-image ndl-opacity ndl-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="ndl-col m6 ndl-hide-small ndl-padding-large">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum diam quis metus maximus, vitae mollis elit euismod. Integer eu quam convallis neque feugiat ornare quis eget urna. Curabitur egestas arcu sed laoreet molestie. Sed sapien mi, aliquet id erat ac, pellentesque sagittis leo. Pellentesque quam sapien, volutpat sed nibh nec, venenatis accumsan nibh. Phasellus vestibulum pretium convallis. Nam in ornare neque, eget posuere orci. Curabitur interdum nulla ut tortor tincidunt, vitae sagittis massa consectetur. In vel est sed massa euismod feugiat. Proin ac fermentum orci, ut auctor nisi.</p>
+    </div>
+  </div>
+</div>
+
+<div class="ndl-row ndl-center ndl-dark-grey ndl-padding-16">
+  <!-- <div class="ndl-quarter ndl-section">
+    <span class="ndl-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="ndl-quarter ndl-section">
+    <span class="ndl-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="ndl-quarter ndl-section">
+    <span class="ndl-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="ndl-quarter ndl-section">
+    <span class="ndl-xlarge">150+</span><br>
+    Meetings
+  </div> -->
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 ndl-display-container ndl-opacity-min">
+  <div class="ndl-display-middle">
+    <span class="ndl-xxlarge ndl-text-white ndl-wide">Events</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="ndl-content ndl-container ndl-padding-64" id="portfolio">
+  <h3 class="ndl-center">Évenements a venir</h3>
+  <p class="ndl-center"><em>Laurent Paquin fait de l'humour.<br> </em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="ndl-row-padding ndl-center">
+    <div class="ndl-col m3">
+      <img src="images/lp-live.jpg" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+    </div>
+
+    <div class="ndl-col m3">
+      <img src="images/lp-live.jpg" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+    </div>
+
+    <div class="ndl-col m3">
+      <img src="images/lp-live.jpg" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+    </div>
+
+    <div class="ndl-col m3">
+      <img src="images/lp-live.jpg" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+    </div>
+
+  </div>
+
+  <div class="ndl-row-padding ndl-center ndl-section">
+      <div class="ndl-col m3">
+        <img src="images/lp-live" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+      </div>
+      <div class="ndl-col m3">
+        <img src="images/lp-live" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+      </div>
+
+      <div class="ndl-col m3">
+        <img src="images/lp-live" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+      </div>
+
+      <div class="ndl-col m3">
+        <img src="images/lp-live" style="width:100%" onclick="onClick(this)" class="ndl-hover-opacity" alt="Laurent Paquin Live">
+      </div>
+    <button class="ndl-button ndl-padding-large ndl-light-grey" style="margin-top:64px">Encore plus d'événements</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="ndl-modal ndl-black" onclick="this.style.display='none'">
+  <span class="ndl-button ndl-large ndl-black ndl-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="ndl-modal-content ndl-animate-zoom ndl-center ndl-transparent ndl-padding-64">
+    <img id="img01" class="ndl-image">
+    <p id="caption" class="ndl-opacity ndl-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 ndl-display-container ndl-opacity-min">
+  <div class="ndl-display-middle">
+     <span class="ndl-xxlarge ndl-text-white ndl-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="ndl-content ndl-container ndl-padding-64" id="contact">
+  <h3 class="ndl-center">Venez-nous voir</h3>
+  <p class="ndl-center"><em>Nous voulons de vos nouvelles!</em></p>
+
+  <div class="ndl-row ndl-padding-32 ndl-section">
+    <div class="ndl-col m4 ndl-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="ndl-round-large ndl-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="ndl-col m8 ndl-panel">
+      <div class="ndl-large ndl-margin-bottom">
+        <i class="fa fa-map-marker fa-fw ndl-hover-text-black ndl-xlarge ndl-margin-right"></i>845 Ch Tiffin, Longueuil, QC J4P 3G5<br>
+        <i class="fa fa-phone fa-fw ndl-hover-text-black ndl-xlarge ndl-margin-right"></i> Téléphone: (450) 670-4740<br>
+        <i class="fa fa-envelope fa-fw ndl-hover-text-black ndl-xlarge ndl-margin-right"></i> Email: infos@infos.com<br>
+      </div>
+      <p>Nous joindre</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="ndl-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="ndl-half">
+            <input class="ndl-input ndl-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="ndl-half">
+            <input class="ndl-input ndl-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="ndl-input ndl-border" type="text" placeholder="Message" required name="Message">
+        <button class="ndl-button ndl-black ndl-right ndl-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Envoyez votre message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="ndl-center ndl-black ndl-padding-64 ndl-opacity ndl-hover-opacity-off">
+  <a href="#home" class="ndl-button ndl-light-grey"><i class="fa fa-arrow-up ndl-margin-right"></i>To the top</a>
+  <div class="ndl-xlarge ndl-section">
+    <i class="fa fa-facebook-official ndl-hover-opacity"></i>
+    <i class="fa fa-instagram ndl-hover-opacity"></i>
+    <i class="fa fa-snapchat ndl-hover-opacity"></i>
+    <i class="fa fa-pinterest-p ndl-hover-opacity"></i>
+    <i class="fa fa-twitter ndl-hover-opacity"></i>
+    <i class="fa fa-linkedin ndl-hover-opacity"></i>
+  </div>
+
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "ndl-bar" + " ndl-card-2" + " ndl-animate-top" + " ndl-white";
+    } else {
+        navbar.className = navbar.className.replace(" ndl-card-2 ndl-animate-top ndl-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("ndl-show") == -1) {
+        x.className += " ndl-show";
+    } else {
+        x.className = x.className.replace(" ndl-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.ndlschools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

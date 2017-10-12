@@ -1,0 +1,18 @@
+#myNavbar {
+
+    background-color: rgb(0,70, 137);
+}
+
+.ndl-bar-item {
+    color:white;
+}
+
+.ndl-button:hover{
+    background-color: rgb(128, 195, 66);
+    color:white !important
+}
+
+#header-message {
+    background-color: rgb(0,70, 137);
+    color: white;
+}
